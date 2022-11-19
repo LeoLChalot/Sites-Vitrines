@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>My Twitter</title>
+		<link rel="icon" href="//abs.twimg.com/favicons/twitter.2.ico" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="assets/style/style.css" />
+	</head>
+	<body>
+		<!-- Barre latérale gauche de navigation (small/Xsmall = ico "Search" => large = ico "Hashtag")-->
+		<header id="aside">
+			<!-- lien ico Twitter -->
+			<i class="fa-brands fa-twitter"></i>
+			<!-- lien ico Search -->
+			<i class="fa-solid fa-magnifying-glass"></i>
+			<!-- Lien ico Hashtag -->
+			<i class="fa-solid fa-hashtag"></i>
+			<!-- lien ico Parameters -->
+			<i class="fa-solid fa-gear"></i>
+		</header>
+		<section>
+			<div id="content">
+				<div id="content-header">
+					<div class="ico">
+						<i class="fa-brands fa-twitter"></i>
+					</div>
+					<div class="search-bar">
+						<input type="text" placeholder="Recherche Twitter" />
+						<!-- Search bar -->
+					</div>
+					<div class="ico">
+						<i class="fa-solid fa-ellipsis"></i>
+						<i class="fa-solid fa-gear"></i>
+					</div>
+				</div>
+				<div id="content-tweet">
+					<div id="content-primary-tweet">
+						<p>Event &#9679; EN DIRECT</p>
+						<h1>Title First Tweet</h1>
+					</div>
+					<div class="separateur"></div>
+					<div id="content-list-tweet">
+						<div class="list-tweets" id="tendance">
+							<h2>Tendances pour vous</h2>
+							<div class="tendance-tweet">
+								<p>Divertissement &#9679; Tendance</p>
+								<h3>Lorem</h3>
+								<p>2862 Tweets</p>
+							</div>
+							<div class="tendance-tweet">
+								<p>Musique &#9679; Tendance</p>
+								<h3>Veritatis</h3>
+								<p>5629 Tweets</p>
+							</div>
+							<div class="tendance-tweet">
+								<p>Tendance dans la catégorie France</p>
+								<h3>Minus</h3>
+								<p>10,3 k Tweets</p>
+							</div>
+							<div class="tendance-tweet">
+								<p>Tendance dans la catégorie France</p>
+								<h3>Aperiam</h3>
+								<p>124 k Tweets</p>
+							</div>
+							<div class="tendance-tweet">
+								<p>Tendance dans la catégorie France</p>
+								<h3>Impedit</h3>
+								<p>17,7 k Tweets</p>
+							</div>
+							<a href="#">Voir plus</a>
+						</div>
+
+						<div class="separateur"></div>
+
+						<div class="list-tweets" id="actu">
+							<h2>Ce qui se passe</h2>
+							<div class="content-actu-tweet">
+								<div class="actu-tweet">
+									<p>Event &#9679; EN DIRECT</p>
+									<h3>Enim, a illo minus</h3>
+								</div>
+								<div class="img-tweet">
+									<img src="assets/img/img-actu-tweet-1.jpg" alt="" />
+								</div>
+							</div>
+							<div class="content-actu-tweet">
+								<div class="actu-tweet">
+									<p>Météo &#9679; EN DIRECT</p>
+									<h3>Lorem ipsum</h3>
+								</div>
+								<div class="img-tweet">
+									<img src="assets/img/img-actu-tweet-3.jpg" alt="" />
+								</div>
+							</div>
+							<div class="content-actu-tweet">
+								<div class="actu-tweet">
+									<p>Event &#9679; EN DIRECT</p>
+									<h3>Dolor sit amet consectetur</h3>
+								</div>
+								<div class="img-tweet">
+									<img src="assets/img/img-actu-tweet-2.jpg" alt="" />
+								</div>
+							</div>
+							<a href="#">Voir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="separateur"></div>
+			</div>
+			<div id="register">
+				<div id="register-form">
+					<div id="register-header">
+						<h2>Nouveau sur Twitter ?</h2>
+						<p>Inscrivez-vous pour profiter de votre propre fil personnalisé !</p>
+					</div>
+					<!-- Inscription Google -->
+					<div id="register-button">
+						<i class="fa-solid fa-user-large"></i>
+						<a href="#">Se connecter en tant que Leo<br />larouchalot@gmail.com</a>
+						<img src="//www.google.com/favicon.ico"" alt="">
+						<svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-z80fyv r-1d4mawv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03" style="color: rgb(4, 121, 239);"><g><path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45z"></path></g></svg>
+						<a href="#">S'inscrire avec Apple</a>
+						<a href="#">Sinscrire avec un numéro de téléphone</a>
+					</div>
+				</div>
+				<div id="register-footer">
+					<p>En vous inscrivant, vous acceptez les <a href="#">Conditions d'utilisation</a> et la	<a href="#">Politique de confidentialité</a>,notamment l'<a href="#">Utilisation des cookies</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+			<!-- Xsmall/small display: none -->
+			
+
+
+		<!-- Colonne centrale présentation Tweets -->
+		<footer>
+			<div id="footer-separateur"></div>
+			<!-- Xmall = display:none -->
+			<div class="footer-content footer-left">
+				<h3>Ne manquez pas ce qu'il se passe.</h3>
+				<p>Les utilisateurs de Twitter sont les premiers à savoir.</p>
+			</div>
+			<!-- Xsmall width:100% -->
+			<div class="footer-content footer-right">
+				<a href="#">Se connecter</a>
+				<a href="#">S'inscrire</a>
+			</div>
+		</footer>
+		<!-- <script src="" async defer></script>: -->
+	</body>
+</html>

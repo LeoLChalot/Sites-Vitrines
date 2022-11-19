@@ -1,0 +1,7 @@
+bg_white : #F0F2F5
+btn_login : #166FF1
+btn_new_account : #36A420
+bg_blue_input : #E8F0FE
+
+Bouton add account : \f055
+Bouton delete profil : \f00d

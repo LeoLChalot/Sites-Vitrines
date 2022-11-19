@@ -1,0 +1,10 @@
+--grey-border: #dbdbdb;
+--spacer-grey: #a8a8a8;
+--bg-white: #fafafa;
+--blue-light: #bae0fb;
+--blue-medium: #80caff;
+--blue-signup: #1997f3;
+--fb-blue: #395284;
+
+Font : billabong (dans le dossier assets)
+Dimensions container de droite : 350px (width) Dimensions image gauche : 400px (width) 600px (height)

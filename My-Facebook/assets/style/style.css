@@ -1,0 +1,261 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    background: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#model-link{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px;
+    text-decoration: none;
+    color: #166FF1;
+    font-weight: bolder;
+}
+section{
+    width: 800px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#profil{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: scale(1.2);
+}
+#profil p{
+    font-size: 13px;
+    margin-top: 3px;
+}
+#profil h1{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+#profil #logo{
+    position: relative;
+    right: 16px;
+}
+#profil #profil-card-container{
+    /* width: 350px; */
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+#profil #profil-card-container .profil-card{
+    background: #fff;
+    width: 140px;
+    height: 190px;
+    border-radius: 8px;
+    transition: .5s;
+    /* margin-right: 1em; */
+    border: 1px solid #dadde2;
+}
+#profil #profil-card-container .profil-card img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#profil #profil-card-container .profil-card p::before{
+    font-family: "FontAwesome";
+    content: "\f00d";
+    color: #fff;
+    position: relative;
+    bottom: 160px;
+    right: 40px;
+    font-size: .7em;
+}
+#profil #profil-card-container .profil-card p{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: .5em;
+    padding-right: 8px;
+    font-size: 20px;
+}
+#profil #profil-card-container .profil-card #add{
+    width: 100%;
+    height: 140px;
+    background: #F5F6F7;
+    border-color :#bfc2c6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#profil #profil-card-container .profil-card #add::before{
+    font-family: "FontAwesome";
+    content: "\f055";
+    position: relative;
+    top: 55px;
+    left: 50px;
+    font-size: 2.5em;
+    color: #166FF1;
+}
+#profil #profil-card-container .profil-card a{
+    display: block;
+    text-align: center;
+    padding: 0 2em;
+    padding-top: .5em;
+    text-decoration: none;
+    color: #166FF1;
+}
+#profil #profil-card-container .profil-card a:visited{
+    color: #166FF1;
+}
+#profil #profil-card-container .profil-card:hover{
+    box-shadow: 0px 6px 16px 4px rgba(185, 185, 185, 0.5);
+}
+#login{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+
+}
+#login #login-form{
+    background: #fff;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0px 6px 16px 4px rgba(185, 185, 185, 0.38);
+    padding: 1em;
+}
+#login #login-form a:last-child{
+    justify-content: flex-end;
+}
+#login #login-form form{
+    width: 100%;
+}
+#login #login-form form input[type = "submit"]{
+    width: 100%;
+    margin-bottom: 1em;
+    height: 45px;
+    border-radius: 8px;
+    background: #166FF1;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+}
+#login #login-form form a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #166FF1;
+    font-size: .8em;
+}
+#login #login-form form a:visited{
+    color: #166FF1;
+}
+#login #login-form form input{
+    width: 100%;
+    margin-bottom: 1.3em;
+    height: 45px;
+    border-radius: 8px;
+    padding-left: 1em;
+    border: 1px solid  #dadde2;
+    outline: none;
+}
+#login #login-form form input::placeholder{
+    color: #bfc2c6;
+}
+#login #login-form form input:focus-visible{
+    background: #E8F0FE;
+}
+#login #login-form form::after{
+    content: "";
+    display: block;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: 0.1px solid #E8F0FE;
+    /* transform: translateX(100%); */
+    width: 95%;
+    height: 1px;
+}
+#login #login-form #create-new-btn{
+    background: #4ec137;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: .8em;
+}
+#create-pro-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+#create-pro-page p{
+    text-align: center;
+    font-size: 13px;
+}
+#create-pro-page p a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+@media screen and (max-width: 900px) {
+    section{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #profil{
+        width: 400px;
+        height: 350px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        /* margin-bottom: 30px; */
+    }
+    #profil #logo{
+        position: inherit;
+        width: 100%;
+        margin: auto;
+    }
+
+    #profil-card-container{
+        gap: 20px;
+    }
+    #profil-card-container:last-child{
+        margin: auto;
+    }
+
+    #login{
+        width: 400px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

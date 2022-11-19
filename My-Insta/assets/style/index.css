@@ -1,0 +1,227 @@
+@font-face {
+	font-family: billabong;
+	src: url("../font/FontsFree-Net-Billabong.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans&display=swap');
+:root {
+	--grey-border: #dbdbdb;
+	--spacer-grey: #a8a8a8;
+	--bg-white: #fafafa;
+	--blue-light: #bae0fb;
+	--blue-medium: #80caff;
+	--blue-signup: #1997f3;
+	--fb-blue: #395284;
+}
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#image {
+    display: none;
+    background: none;
+}
+#login-container{
+    background: none;
+}
+body{
+    background: var(--bg-white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    width: 350px;
+    height: auto;
+    display: flex;
+    background: var(--bg-white);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section #login-container:nth-child(1),
+section #login-container:nth-child(2){
+    border-radius: 5px;
+    
+}
+section div{
+    padding: 1em;
+    background: #fff;
+}
+#login {
+    position: relative;
+    width: 350px;
+    height: 380px;
+    border: 1px solid var(--grey-border);
+    /* margin-top: 3em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login h1 {
+    font-family: billabong;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 110px;
+}
+#login input{
+    border-radius: 3px;
+    outline: #a8a8a8;
+}
+.input-txt{
+    height: 43px;
+}
+#login form input:focus-visible{
+    border: none;
+    background: #e0eef8;
+}
+#show{
+    position: absolute;
+    right: 60px;
+    top: 193px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#login form input:not([type="submit"]) {
+    /* height: 35px; */
+    width: 250px;
+    margin: 0.3em;
+    padding: 1em;
+    border: 1px solid var(--grey-border);
+    background: var(--bg-white);
+}
+#login form input[type="password"]:empty #show {
+    display: none;
+}
+#login form input::placeholder{
+    color: var(--spacer-grey);
+    transition: .2s ease-in-out;
+}
+#login form input:first-child:focus-visible::placeholder{
+    visibility: visible;
+    font-size: 9px;
+    transform: translateY(-16px);
+}
+#login form input:nth-child(3):focus-visible::placeholder{
+    visibility: visible;
+    font-size: 9px;
+    transform: translateY(-16px);
+}
+#login input[type="submit"] {
+    width: 250px;
+    height: 30px;
+    margin: 0.6em 0.3em;
+    background: var(--blue-signup);
+    border: none;
+    color: var(--bg-white);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#login #or{
+    text-align: center;
+    color: #c9c9c9;
+    font-size: .8em;
+}
+#login #or::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: -25px;
+    top: 10px;
+    border: 0.1px solid var(--grey-border);
+    transform: translateX(-50%);
+    width: 100px;
+}
+#login #or::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 125px;
+    top: -8px;
+    border: 0.1px solid var(--grey-border);
+    transform: translateX(-50%);
+    width: 100px;
+}
+#login a{
+    text-decoration: none;
+    margin-top: 1em;
+    color: var(--fb-blue);
+}
+#login a:nth-child(4){
+    font-weight: 500;
+}
+#facebook::before {
+    font-family: "FontAwesome";
+    content: "\f082";
+    margin: .5em;
+}
+#login a:nth-child(5){
+    font-size: .7em;
+}
+#new-account{
+    width: 350px;
+    height: 60px;
+    border: 1px solid var(--grey-border);
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .8em;
+}
+#new-account a{
+    text-decoration: none;
+    margin-top: 1em;
+    color: var(--blue-signup);
+}
+#container-img{
+    background: none;
+    width: 350px;
+    height: 10px;
+}
+#container-img p{
+    width: 100%;
+    text-align: center;
+}
+#container-img .image-login{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: .8em;
+}
+#container-img .image-login img{
+    /* margin: 1em 1em; */
+    width: 150px;
+}
+@media screen and (min-width: 872px){
+    section{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 1.5em;
+        /* height: 100vh; */
+    }
+    #image{
+        margin-top: .2em;
+        display: block;
+    }
+    #login-container{
+        margin: 2em 0;
+    }
+    #login{
+        margin-top: 0;
+    }
+
+    #container-img img{
+        margin-top: .2em;
+    }
+}
