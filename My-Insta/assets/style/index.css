@@ -235,7 +235,7 @@ input:not([type="submit"]) {
 #accueil-header{
     position: relative;
     top: 0;
-    height: 60px;
+    height: 50px;
     justify-content: flex-end;
     padding-left: .7em;
     padding-right: .9em;
@@ -257,15 +257,22 @@ input:not([type="submit"]) {
     top: -45px;
     right: 10px;
 }
+#accueil-header-search{
+    display: flex;
+    width: 300px;
+}
 #accueil-header-search input{
-    height: 40px;
-    width: 150px;
+    height: 30px;
+    width: 100%;
     margin-right: 1.3em;
+    border-radius: 7px;
+    background: #f0f0f0;
 }
 
 #accueil-main{
     padding: 1.3em;
     width: 100%;
+    max-width: 500px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -277,19 +284,75 @@ input:not([type="submit"]) {
     border: 1px solid var(--grey-border);
     border-radius: 8px;
     width: 100%;
-    height: 110px;
+    height: 90px;
 }
-#accueil-main #accueil-main-container{
+#accueil-main .insta-post{
     background: #fff;
     border: 1px solid var(--grey-border);
     border-radius: 8px;
     margin-top: 1em;
     width: 100%;
-    height: 100%;
     /* margin-bottom: 50px; */
 }
+::-webkit-scrollbar{
+    display: none;
+}
+#accueil-main-contact{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    gap: 20px
+}
+.contact{
+    width: 60px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact .color-gradient{
+    position: relative;
+    width: 100%;
+    padding: .2em;
+    border-radius: 50%;
+    background: linear-gradient(42deg, rgba(254,255,52,1) 0%, rgba(216,41,255,1) 100%);
+    padding:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .color-gradient .border-white{
+    position: relative;
+    width: 100%;
+    padding: .2em;
+    border-radius: 50%;
+    background: #fff;
+    padding:1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .color-gradient .border-white img{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.contact .contact-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.contact .contact-name p{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
 
 #accueil-footer-small{
     position: sticky;
@@ -298,8 +361,8 @@ input:not([type="submit"]) {
     justify-content: space-around;
 }
 #accueil-footer-small .user{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: url("../img/profil_picture_2.jpg");
     background-size: cover;
     border-radius: 50%;

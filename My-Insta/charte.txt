@@ -5,6 +5,7 @@
 --blue-medium: #80caff;
 --blue-signup: #1997f3;
 --fb-blue: #395284;
+background: linear-gradient(42deg, rgba(254,255,52,1) 0%, rgba(216,41,255,1) 100%);
 
 Font : billabong (dans le dossier assets)
 Dimensions container de droite : 350px (width) Dimensions image gauche : 400px (width) 600px (height)
