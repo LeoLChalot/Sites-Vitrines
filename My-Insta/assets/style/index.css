@@ -249,7 +249,10 @@ input:not([type="submit"]) {
     margin-right: auto;
     margin-left: .2em;
 }
-#accueil-header-logo h1{
+#accueil-header-logo a{
+    font-family: billabong;
+    text-decoration: none;
+    color: #000;
     font-size: 2em;
     cursor: pointer;
 }

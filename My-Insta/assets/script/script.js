@@ -24,6 +24,6 @@ function message() {
     alert("Permettra d'accéder à la liste des messages privés")
 }
 function user() {
-    alert("APermettra d'accéder à notre page personnelle")
+    alert("Permettra d'accéder à notre page personnelle")
 }
 
