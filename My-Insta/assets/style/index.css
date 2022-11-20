@@ -253,6 +253,7 @@ input:not([type="submit"]) {
 }
 #accueil-header-logo h1{
     font-size: 2em;
+    cursor: pointer;
 }
 #accueil-header-logo .header-list{
     position: absolute;
