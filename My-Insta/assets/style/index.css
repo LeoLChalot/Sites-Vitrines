@@ -20,18 +20,19 @@
 	padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body{
     position: relative;
     top: 0;
     background: var(--bg-white);
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/* ******************************************************************* */
+/*                            PAGE HOME.HTML                           */
+/* ******************************************************************* */
 section {
     width: 100%;
     display: flex;
@@ -40,7 +41,6 @@ section {
     align-items: center;
     padding: 2em;
 }
-/* Image mobile assets/img */
 #section-left {
     display: none;
 }
@@ -50,7 +50,6 @@ section {
     justify-content: center;
     align-items: center;
 }
-
 #login-container:nth-child(1),
 #login-container:nth-child(2){
     border-radius: 5px;
@@ -61,41 +60,49 @@ section {
 #login {
     position: relative;
     width: 350px;
-    height: 380px;
+    height: 400px;
     border: 1px solid var(--grey-border);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#login h1 {
+h1 {
     font-family: billabong;
     font-size: 3em;
     font-weight: 500;
     line-height: 110px;
 }
-#login input{
+input{
     border-radius: 3px;
     outline: #a8a8a8;
 }
 .input-txt{
     height: 43px;
 }
-#login form input:focus-visible{
+#login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+input:focus-visible{
     border: none;
     background: #e0eef8;
 }
 #show{
+    display: block;
     position: absolute;
     right: 60px;
-    top: 193px;
+    top: 185px;
     background: none;
     border: none;
     cursor: pointer;
 }
-#login form input:not([type="submit"]) {
-    /* height: 35px; */
+/* #show:active{
+    display: block;
+} */
+input:not([type="submit"]) {
     width: 250px;
-    margin: 0.3em;
     padding: 1em;
     border: 1px solid var(--grey-border);
     background: var(--bg-white);
@@ -117,10 +124,16 @@ section {
     font-size: 9px;
     transform: translateY(-16px);
 }
-#login input[type="submit"] {
-    width: 250px;
+#login a[type="submit"] {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
     height: 30px;
     margin: 0.6em 0.3em;
+    padding: 1em;
     background: var(--blue-signup);
     border: none;
     color: var(--bg-white);
@@ -206,11 +219,104 @@ section {
     width: 150px;
 }
 
-
-@media screen and (min-width: 400px){
-
+/* ******************************************************************* */
+/*                          PAGE ACCUEIL.HTML                          */
+/* ******************************************************************* */
+#body-accueil{
+    height: 100vh;
+}
+#accueil-header, #accueil-footer-small{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid var(--spacer-grey);
+    display: flex;
+    align-items: center;
+}
+#accueil-header{
+    position: relative;
+    top: 0;
+    height: 60px;
+    justify-content: flex-end;
+    padding-left: .7em;
+    padding-right: .9em;
+}
+#accueil-header-logo{
+    position: relative;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: .2em;
+}
+#accueil-header-logo h1{
+    font-size: 2em;
+}
+#accueil-header-logo .header-list{
+    position: absolute;
+    top: -45px;
+    right: 10px;
+}
+#accueil-header-search input{
+    height: 40px;
+    width: 250px;
+    margin-right: 1.3em;
 }
 
+#accueil-main{
+    padding: 1.3em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#accueil-main #accueil-main-contact{
+    background: #fff;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    width: 100%;
+    height: 110px;
+}
+#accueil-main #accueil-main-container{
+    background: #fff;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    margin-top: 1em;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+#accueil-footer-small{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    justify-content: space-around;
+}
+#accueil-footer-small .user{
+    width: 30px;
+    height: 30px;
+    background: url("../img/profil_picture_2.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ******************************************************************* */
+/*                        MEDIA QUERY HOME.HTML                        */
+/* ******************************************************************* */
 @media screen and (min-width: 872px){
     #section-left{
         display: block;
@@ -247,4 +353,9 @@ section {
         margin-top: .2em;
     }
 }
+
+
+/* ******************************************************************* */
+/*                     MEDIA QUERY ACCUEIL.HTML                        */
+/* ******************************************************************* */
 
