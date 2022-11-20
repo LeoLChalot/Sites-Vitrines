@@ -20,37 +20,42 @@
 	padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#image {
-    display: none;
-    background: none;
-}
-#login-container{
-    background: none;
-}
+
 body{
+    position: relative;
+    top: 0;
     background: var(--bg-white);
-    /* height: 100vh; */
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section {
-    width: 350px;
-    height: auto;
-    display: flex;
-    background: var(--bg-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-section #login-container:nth-child(1),
-section #login-container:nth-child(2){
-    border-radius: 5px;
-    
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
-section div{
-    padding: 1em;
+/* Image mobile assets/img */
+#section-left {
+    display: none;
+}
+#section-right{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-container:nth-child(1),
+#login-container:nth-child(2){
+    border-radius: 5px;
+}
+#login-container #login, #new-account{
     background: #fff;
 }
 #login {
@@ -58,7 +63,6 @@ section div{
     width: 350px;
     height: 380px;
     border: 1px solid var(--grey-border);
-    /* margin-top: 3em; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,16 +185,16 @@ section div{
     margin-top: 1em;
     color: var(--blue-signup);
 }
-#container-img{
+#application-store{
     background: none;
     width: 350px;
-    height: 10px;
+    margin-top: 1em;
 }
-#container-img p{
+#application-store p{
     width: 100%;
     text-align: center;
 }
-#container-img .image-login{
+#application-store .image-login{
     background: none;
     display: flex;
     align-items: center;
@@ -198,30 +202,49 @@ section div{
     padding: 0;
     margin-top: .8em;
 }
-#container-img .image-login img{
-    /* margin: 1em 1em; */
+#application-store .image-login img{
     width: 150px;
 }
+
+
+@media screen and (min-width: 400px){
+
+}
+
 @media screen and (min-width: 872px){
-    section{
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 1.5em;
-        /* height: 100vh; */
-    }
-    #image{
-        margin-top: .2em;
+    #section-left{
         display: block;
+    }
+    body{
+        width: 100%;
+
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+
+    }
+    section{
+        width: 800px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    #section-left{
+        width: 300px;
+        margin-top: .2em;
+    }
+    #section-right{
+        width: 350px;
     }
     #login-container{
         margin: 2em 0;
     }
-    #login{
-        margin-top: 0;
-    }
 
-    #container-img img{
+    #application-store img{
+        width: 100%;
         margin-top: .2em;
     }
 }
+
