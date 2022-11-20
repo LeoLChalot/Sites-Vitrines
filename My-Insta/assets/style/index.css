@@ -286,13 +286,13 @@ input:not([type="submit"]) {
     margin-top: 1em;
     width: 100%;
     height: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 
 
 #accueil-footer-small{
-    position: absolute;
+    position: sticky;
     bottom: 0;
     height: 50px;
     justify-content: space-around;
