@@ -359,7 +359,7 @@ input:not([type="submit"]) {
 }
 
 #accueil-footer-small{
-    position: absolute;
+    position: sticky;
     bottom: 0;
     height: 50px;
     justify-content: space-around;
