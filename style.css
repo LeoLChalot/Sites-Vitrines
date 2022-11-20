@@ -1,0 +1,26 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    display: block;
+    margin: 2em;
+    text-decoration: none;
+    color: #1D9BF0;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
