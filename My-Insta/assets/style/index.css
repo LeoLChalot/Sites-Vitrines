@@ -12,6 +12,8 @@
 	--blue-signup: #1997f3;
 	--fb-blue: #395284;
 }
+
+
 *,
 ::before,
 ::after {
@@ -321,7 +323,7 @@ input:not([type="submit"]) {
     width: 100%;
     padding: .2em;
     border-radius: 50%;
-    background: linear-gradient(42deg, rgba(254,255,52,1) 0%, rgba(216,41,255,1) 100%);
+    background: -webkit-linear-gradient(42deg, rgba(254,255,52,1) 0%, rgba(216,41,255,1) 100%);
     padding:3px;
     display: flex;
     justify-content: center;
