@@ -25,5 +25,5 @@ function message() {
 }
 function user() {
     alert("Permettra d'accéder à notre page personnelle")
-}
+    }
 
