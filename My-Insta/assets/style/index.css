@@ -12,8 +12,6 @@
 	--blue-signup: #1997f3;
 	--fb-blue: #395284;
 }
-
-
 *,
 ::before,
 ::after {
@@ -271,7 +269,6 @@ input:not([type="submit"]) {
     border-radius: 7px;
     background: #f0f0f0;
 }
-
 #accueil-main{
     padding: 1.3em;
     width: 100%;
@@ -281,7 +278,6 @@ input:not([type="submit"]) {
     flex-direction: column;
     justify-content: flex-start;
 }
-
 #accueil-main #accueil-main-contact{
     background: #fff;
     border: 1px solid var(--grey-border);
@@ -351,15 +347,13 @@ input:not([type="submit"]) {
     justify-content: center;
     align-items: center;
 }
-
 .contact .contact-name p{
     width: 100%;
     text-align: center;
     font-size: 10px;
 }
-
 #accueil-footer-small{
-    position: sticky;
+    position: fixed;
     bottom: 0;
     height: 50px;
     justify-content: space-around;
@@ -371,16 +365,6 @@ input:not([type="submit"]) {
     background-size: cover;
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
 /* ******************************************************************* */
 /*                        MEDIA QUERY HOME.HTML                        */
 /* ******************************************************************* */
@@ -414,14 +398,11 @@ input:not([type="submit"]) {
     #login-container{
         margin: 2em 0;
     }
-
     #application-store img{
         width: 100%;
         margin-top: .2em;
     }
 }
-
-
 /* ******************************************************************* */
 /*                     MEDIA QUERY ACCUEIL.HTML                        */
 /* ******************************************************************* */
