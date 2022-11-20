@@ -259,7 +259,7 @@ input:not([type="submit"]) {
 }
 #accueil-header-search input{
     height: 40px;
-    width: 250px;
+    width: 150px;
     margin-right: 1.3em;
 }
 
