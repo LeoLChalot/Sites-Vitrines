@@ -235,7 +235,7 @@ input:not([type="submit"]) {
 #accueil-header{
     position: relative;
     top: 0;
-    height: 50px;
+    height: 70px;
     justify-content: flex-end;
     padding-left: .7em;
     padding-right: .9em;
@@ -249,6 +249,14 @@ input:not([type="submit"]) {
     margin-right: auto;
     margin-left: .2em;
 }
+#accueil-header-logo #logo{
+    position: relative;
+}
+#accueil-header-logo #logo #logo-svg{
+    position: absolute;
+    top: -23px;
+}
+
 #accueil-header-logo a{
     font-family: billabong;
     text-decoration: none;
@@ -262,18 +270,23 @@ input:not([type="submit"]) {
     right: 10px;
 }
 #accueil-header-search{
+    position: relative;
     display: flex;
     width: 300px;
 }
+#accueil-header-search .notification{
+    position: relative;
+    top: 8px;
+}
 #accueil-header-search input{
-    height: 30px;
+    height: 38px;
     width: 100%;
-    margin-right: 1.3em;
+    margin-right: 1.2em;
     border-radius: 7px;
     background: #f0f0f0;
 }
 #accueil-main{
-    padding: 1.3em;
+    padding: .4em;
     width: 100%;
     max-width: 500px;
     height: 100%;
@@ -286,7 +299,8 @@ input:not([type="submit"]) {
     border: 1px solid var(--grey-border);
     border-radius: 8px;
     width: 100%;
-    height: 90px;
+    height: 120px;
+    margin-top: .5em;
 }
 #accueil-main .insta-post{
     background: #fff;
@@ -300,17 +314,15 @@ input:not([type="submit"]) {
     display: none;
 }
 #accueil-main-contact{
-    width: 100%;
-    height: 100%;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
     flex-wrap: nowrap;
     overflow-y: scroll;
-    gap: 20px
+    gap: 15px
 }
 .contact{
-    width: 60px;
+    width: 70px;
     height: 100%;
     position: relative;
     display: flex;
@@ -332,7 +344,7 @@ input:not([type="submit"]) {
 .contact .color-gradient .border-white{
     position: relative;
     width: 100%;
-    padding: .2em;
+    padding: .3em;
     border-radius: 50%;
     background: #fff;
     padding:1px;
